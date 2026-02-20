@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     text-align: center;
@@ -10,6 +9,7 @@ body {
     background: rgba(0,0,0,0.3);
     padding: 30px;
     border-radius: 15px;
+    height:100vh;
 }
 
 input, button {
