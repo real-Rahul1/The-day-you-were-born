@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.container {
+    background: rgba(0,0,0,0.3);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #ffcc00;
+    cursor: pointer;
+}
+
+#results {
+    margin-top: 20px;
+}
