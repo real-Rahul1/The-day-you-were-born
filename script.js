@@ -11,7 +11,6 @@ async function getEvents() {
     const month = date.getMonth() + 1;
     const day = date.getDate();
 
-    // 🔥 Show loading
     resultsDiv.innerHTML = "<h3>Loading historical events...</h3>";
 
     try {
@@ -21,9 +20,11 @@ async function getEvents() {
 
         const data = await response.json();
 
-        let output = `<h2>Historical Events on ${day}/${month}</h2>`;
+        let output = `<h2>Top 10 Historical Events on ${day}/${month}</h2>`;
 
-        data.events.forEach(event => {
+        const limitedEvents = data.events.slice(0, 10);
+
+        limitedEvents.forEach(event => {
             output += `
                 <div class="event">
                     <p><strong>${event.year}</strong> - ${event.text}</p>
